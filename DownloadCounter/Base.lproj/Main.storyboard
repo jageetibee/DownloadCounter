@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CJp-Ra-Usy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Letöltés számláló-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DownloadCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,122 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Információk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-nk-Xcy">
+                                <rect key="frame" x="220" y="72" width="161" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="382-p7-JWC"/>
+                                    <constraint firstAttribute="height" constant="21" id="FoN-ug-XzJ"/>
+                                    <constraint firstAttribute="width" constant="161" id="QSV-1k-r4C"/>
+                                    <constraint firstAttribute="height" constant="37" id="rka-KR-hGT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="382-p7-JWC"/>
+                                        <exclude reference="FoN-ug-XzJ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letöltés: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="098-Bq-Rq4">
+                                <rect key="frame" x="16" y="134" width="79" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="6qf-Dz-de6"/>
+                                    <constraint firstAttribute="height" constant="36" id="XSh-dd-gPt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feltöltés: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-O5-kSF">
+                                <rect key="frame" x="16" y="178" width="86" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="cLi-cB-PBp"/>
+                                    <constraint firstAttribute="height" constant="34" id="kLu-XO-l8g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs1-s7-WUA">
+                                <rect key="frame" x="103" y="141" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="GH5-uu-yRB"/>
+                                    <constraint firstAttribute="height" constant="21" id="iWn-Ig-1g5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m04-hd-SIY">
+                                <rect key="frame" x="110" y="184" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8Hr-gp-Jd6"/>
+                                    <constraint firstAttribute="width" constant="42" id="Nrg-yq-KBe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="098-Bq-Rq4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="2Ie-R3-G1z"/>
+                            <constraint firstItem="hs1-s7-WUA" firstAttribute="leading" secondItem="098-Bq-Rq4" secondAttribute="trailing" constant="8" id="FCX-OF-5DC"/>
+                            <constraint firstItem="7TO-O5-kSF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RnN-iv-S3b"/>
+                            <constraint firstItem="m04-hd-SIY" firstAttribute="leading" secondItem="7TO-O5-kSF" secondAttribute="trailing" constant="8" id="WGl-ck-PpI"/>
+                            <constraint firstAttribute="centerX" secondItem="qWV-nk-Xcy" secondAttribute="centerX" constant="-0.5" id="aqQ-Fp-AFz"/>
+                            <constraint firstItem="qWV-nk-Xcy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bZT-DG-APX"/>
+                            <constraint firstItem="qWV-nk-Xcy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="fUU-Wx-Mw2"/>
+                            <constraint firstItem="7TO-O5-kSF" firstAttribute="top" secondItem="098-Bq-Rq4" secondAttribute="bottom" constant="8" id="lIv-1C-k5U"/>
+                            <constraint firstItem="hs1-s7-WUA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="77" id="mr2-z5-WMx"/>
+                            <constraint firstItem="qWV-nk-Xcy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="sUM-jW-7CU"/>
+                            <constraint firstItem="098-Bq-Rq4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="70" id="y7A-O0-sde"/>
+                            <constraint firstItem="m04-hd-SIY" firstAttribute="top" secondItem="hs1-s7-WUA" secondAttribute="bottom" constant="22" id="zqe-QD-oKY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bZT-DG-APX"/>
+                                <exclude reference="fUU-Wx-Mw2"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Letöltés számláló" id="Jf4-Lp-G4s">
+                        <barButtonItem key="leftBarButtonItem" image="settings.png" id="ArU-FC-sQb">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="feltoltLabel" destination="m04-hd-SIY" id="8hS-Xo-ZsC"/>
+                        <outlet property="letoltLabel" destination="hs1-s7-WUA" id="D8N-Ri-n1G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1057" y="314"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="peg-WQ-uu8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CJp-Ra-Usy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nIR-Ve-s9A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1zL-aP-upv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRJ-aB-7as" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211" y="314"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings.png" width="32" height="32"/>
+    </resources>
 </document>

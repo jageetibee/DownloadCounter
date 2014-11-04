@@ -13,6 +13,7 @@
 		FB2CE6D11A0503EF00ACAECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2CE6D01A0503EF00ACAECC /* Images.xcassets */; };
 		FB2CE6D41A0503EF00ACAECC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2CE6D21A0503EF00ACAECC /* LaunchScreen.xib */; };
 		FB2CE6E01A0503EF00ACAECC /* DownloadCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CE6DF1A0503EF00ACAECC /* DownloadCounterTests.swift */; };
+		FB2CE6F01A05091C00ACAECC /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FB2CE6EF1A05091C00ACAECC /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		FB2CE6D91A0503EF00ACAECC /* DownloadCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2CE6DE1A0503EF00ACAECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2CE6DF1A0503EF00ACAECC /* DownloadCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCounterTests.swift; sourceTree = "<group>"; };
+		FB2CE6EF1A05091C00ACAECC /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		FB2CE6BB1A0503EF00ACAECC = {
 			isa = PBXGroup;
 			children = (
+				FB2CE6EF1A05091C00ACAECC /* settings.png */,
 				FB2CE6C61A0503EF00ACAECC /* DownloadCounter */,
 				FB2CE6DC1A0503EF00ACAECC /* DownloadCounterTests */,
 				FB2CE6C51A0503EF00ACAECC /* Products */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2CE6F01A05091C00ACAECC /* settings.png in Resources */,
 				FB2CE6CF1A0503EF00ACAECC /* Main.storyboard in Resources */,
 				FB2CE6D41A0503EF00ACAECC /* LaunchScreen.xib in Resources */,
 				FB2CE6D11A0503EF00ACAECC /* Images.xcassets in Resources */,
