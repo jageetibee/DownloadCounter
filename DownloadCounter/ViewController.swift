@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor.blueColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         navigationController?.navigationItem
+        println("Kabbe!")
     }
 
     override func didReceiveMemoryWarning() {
