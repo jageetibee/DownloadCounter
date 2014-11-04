@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AEE78DF5-C6E9-418D-B517-BD1D64407E11</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DownloadCounter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C00B56CC780269B5F7AAA11D38EAD8049EB698F</key>
+		<string>https://github.com/jageetibee/DownloadCounter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DownloadCounter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C00B56CC780269B5F7AAA11D38EAD8049EB698F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jageetibee/DownloadCounter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C00B56CC780269B5F7AAA11D38EAD8049EB698F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C00B56CC780269B5F7AAA11D38EAD8049EB698F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DownloadCounter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
